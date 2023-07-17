@@ -1,0 +1,71 @@
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.main-container{
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.main-container h3{
+   
+    color: #fff;
+    font-size: 75px;
+}
+.main-container h3:hover{
+    color:#ED4F33;
+    transition:all 1s ease;
+
+}
+
+.main-container p{
+    margin-top: 60px;
+    color: #ED4F33;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.main-btns{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:960px){
+    .main-container{
+        text-align: center;
+    }
+    .main-container h3{
+        text-align: center;
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .main-container p{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .main-container{
+        text-align: center;
+        font-size: 50px;
+    }
+    .btn-mobile{
+        display: block;
+        text-decoration: none;
+    }
+    .btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+}

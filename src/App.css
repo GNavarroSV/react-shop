@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.home,
+.services,
+.products {
+  background-repeat: no-repeat;
+}
+
+Products{
+    background-color: #E9E0CF;
+}

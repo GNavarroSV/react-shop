@@ -1,0 +1,266 @@
+body{
+    background-color:#E9E0CF;
+}
+.container{ 
+    justify-content: center;
+    text-align: center;
+    background-color: #E9E0CF;
+}
+.shoes-catalog{
+    background-color: #E9E0CF;
+}
+.shoes-searcher{
+    margin-top: 20px;
+    height: 25px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.shoes-container{
+    background-color: #E9E0CF;
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 0px;
+    border-radius: 4px;
+}
+
+.shoes-link{
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.shoes-link:hover{
+    
+    box-shadow: 0 8px 30px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 1px 10px rgba(243, 175, 116, 0));
+     filter: drop-shadow(20px 20px 20px 20px rgba(236, 115, 115, 0.017));
+}
+
+.shoes-wrapper{
+    background-color: white;
+    width: 400px;
+    height: 460px;
+    box-sizing: border-box;
+   
+}
+
+.shoes-img{
+    margin-top: 25px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.shoes-img:hover{
+    transform: scale(1.05);
+}
+
+.shoes-info-main{
+    display: flex;
+    justify-content: center;
+}
+
+.shoes-info-main h3, h5{
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.shoes-info{
+    font-size: 20px;
+    font-family: 'Paytone One', sans-serif;
+    color:black;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.shoes-brand{
+    font-family:'Anton', sans-serif;
+}
+
+.shoes-model{
+
+}
+
+.shoes-price{
+    
+    font-size: 22px;
+    font-weight: lighter;
+    color: #ED4F33;
+   
+}
+
+/*Pagination section*/
+
+.pagination-btn{
+    list-style-type: none;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #E9E0CF;
+    margin-top: 35px;
+    
+}
+
+.pagination-btn a{
+    cursor: pointer;
+    padding: 10px;
+    
+   
+    background-color: #ED4F33;
+    color: #fff;
+}
+
+.pagination-btn a:hover{
+    color: #ED4F33;
+    background-color: #fff;
+    transition: 0.3s ease-in;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
+
+.container{
+    background-color: #E9E0CF;
+}
+@media only screen and (max-width: 968px){
+    .shoes-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shoes-searcher{
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+/*Shoes Details*/
+
+.shoe-main-container{
+    background-color: #E9E0CF;
+    margin-top: 0px;
+}
+
+.shoe-details-container{
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #E9E0CF;
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "sidebar1 header"
+    "sidebar2 header"
+    "sidebar3 header"
+    
+}
+.shoes-details-card{
+    border-radius: 8px;
+    width: 600px;
+    height: 630px;
+    background-color: #fff;
+    grid-area: header;
+    margin-bottom: 50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+
+.shoe-details-info h2{
+    font-family: 'Anton', sans-serif;
+    margin-inline: 3px;
+    text-transform: uppercase;
+    
+}
+.shoe-details-info h5{
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    color:black;
+
+}
+.main-details{
+    display: flex;
+    justify-content: center;
+    color:black;
+}
+
+.shoes-details-img{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    height: 78%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.shoes-details-img-rndm{
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+}
+.title h4{
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: 'Paytone One', sans-serif;
+    color: black;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    
+}
+.rndm-1{
+    border-radius: 4px;
+    grid-area: sidebar1;
+    background-color: #fff;
+}
+.rndm-2{
+    border-radius: 4px;
+    grid-area: sidebar2;
+    background-color: #fff;
+}
+
+.rndm-3{
+    border-radius: 4px;
+    grid-area: sidebar3;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.rndm-1:hover, .rndm-2:hover, .rndm-3:hover{
+    cursor: pointer;
+}
+
+
+.rndm-1:hover::after, .rndm-2:hover::after, .rndm-3:hover::after{
+    
+    content: attr(data-category);
+    box-sizing: border-box;
+    font-weight: bolder;
+    font-style: oblique;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ED4F33;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    position: sticky;
+    
+}
+
+
+
+
